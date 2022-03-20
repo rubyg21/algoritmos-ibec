@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pruebas clase</title>
+</head>
+
+<body>
+
+  <script>
+// PRACTICO 1 BUSQUEDA LINEAL ************OK************
+// 3 - b
+
+let input1 = [1, '2', '0', '1b', '1'] //  Output: [1,”1b”,”1”]
+
+let flag1 = ['1b',1]
+let output = []
+
+for (let j = 0; j < flag1.length; j++){
+    if(input1.includes( flag1[j].toString() )){
+        output.push( flag1[j].toString() )
+    }
+}
+
+let flag = ['1']
+let x = []
+
+for (let i = 0; i < flag.length; i++){
+    if(input1.includes( parseInt(flag)) ){
+        x.push( parseInt(flag) ) 
+        output.push(x[0])
+       
+    }
+}
+
+console.log(output)
+
+
+
+
+  </script>
+
+
+
+
+</body>
+
+</html>
