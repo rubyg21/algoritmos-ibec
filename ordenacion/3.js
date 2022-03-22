@@ -1,10 +1,4 @@
-
-
 // Input: ['Aba','Abb','b','B']      Output:   ['b','B','AAb','Abb']
-
-
-
-// console.log(output);
 
 // 3. Desarrollar un algoritmo de ordenación normal para los siguientes arrays
 // a. Input: [“Aba”,”Abb”,”b”,”B”] Output: [“b”,”B”,”AAb”,“Abb”]
@@ -20,44 +14,32 @@
 
 // const input = ['Aba','Abb','b','B'] Output: [“b”,”B”,”AAb”,“Abb”]
 
+const input  = ["AAb", "Abb", 'b', 'B']
+const bubble = function (arr){
+    for (let i = 0; i < arr.length; i++){
+        for (let j = 0; j < arr.length; j++){
+            if(arr[j] > arr[j+1]){
+                let tmp = arr[j]
+                arr[j] = arr[j+1]
+                arr[j+1] = tmp
+            }
+        }
+    }
+    return arr
+}
+let out1 = []
+let out2 = []
 
-// let input = ['AAb', 'Abb', 'b', 'B']
-// const output = []
+for (let i = 0; i < input.length; i++){
+    if(input[i].length > 1){
+        out2.push(input[i])
+    } else {
+        out1.push(input[i])
+    }
+}
+out2 = bubble(out2)
+out1 = bubble(out1)
+const output = out1.concat(out2)
 
-
-// let list = ['AAb', 'Abb', 'b', 'B']
-// const output = []
-
-
-// const list = [
-//   { letras : 'b',   value: 1 },
-//   { letras : 'B',   value: 2 },
-//   { letras : 'Abb', value: 4 },
-//   { letras : 'AAb', value: 3 }
-// ]
-
-
-// const output = list.sort((a, b) => a.value - b.value)
-
-// console.log(list);
-// console.log(output);
-
-
-
-// ***********************************************************************
-// let input = ['AAb', 'Abb', 'b', 'B']
-// const output = []
-
-// input.sort((A,B) => {
-
-//     if (A < B) {
-//         return 1 
-//     } else if (A > B) {
-//         return -1
-//     }
-
-// });
-// console.log(input);
-
-
+console.log(output)
 
