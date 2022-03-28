@@ -59,42 +59,43 @@
 //  Input: [1, “B”, “C”, true, true, 1] Output: [1,1,true,true,”B”,”C”]
 
 
-const input = [1, 'B', 'C', true, true, 1]  //  Output: [1,1,true,true,'B,'C]
+// const input = [1, 'B', 'C', true, true, 1]  //  Output: [1,1,true,true,'B,'C]
 
-let numArr = []
-let strArr = []
-let bool = []
 
-        for(let i = 0; i < input.length; i++){
-            if(typeof input[i] === 'number'){
-                numArr.push(input[i])
-            } else if (typeof input[i] === 'string'){
-                strArr.push(input[i])
-            } else if (typeof input[i] === 'boolean'){
-                bool.push(input[i])
-            }
-        }
+// let numArr = []
+// let strArr = []
+// let bool = []
+
+//         for(let i = 0; i < input.length; i++){
+//             if(typeof input[i] === 'number'){
+//                 numArr.push(input[i])
+//             } else if (typeof input[i] === 'string'){
+//                 strArr.push(input[i])
+//             } else if (typeof input[i] === 'boolean'){
+//                 bool.push(input[i])
+//             }
+//         }
     
 
-let bubbleOrder = inputArr => {
-    // Bubble sort
-    for (let i = 0; i < inputArr.length; i++) {
-        for (let j = 0; j < inputArr.length; j++) {
-            if (inputArr[j] > inputArr[j + 1]) {
-                let tmp = inputArr[j]
-                inputArr[j] = inputArr[j + 1]
-                inputArr[j + 1] = tmp
-            }
-        }
-    }
-    return inputArr
-}
+// let bubbleOrder = inputArr => {
+//     // Bubble sort
+//     for (let i = 0; i < inputArr.length; i++) {
+//         for (let j = 0; j < inputArr.length; j++) {
+//             if (inputArr[j] > inputArr[j + 1]) {
+//                 let tmp = inputArr[j]
+//                 inputArr[j] = inputArr[j + 1]
+//                 inputArr[j + 1] = tmp
+//             }
+//         }
+//     }
+//     return inputArr
+// }
 
-numArr = bubbleOrder(numArr)
-strArr = bubbleOrder(strArr)
-bool = bubbleOrder(bool)
+// numArr = bubbleOrder(numArr)
+// strArr = bubbleOrder(strArr)
+// bool = bubbleOrder(bool)
 
 
-const output = numArr.concat(bool,strArr)
+// const output = numArr.concat(bool,strArr)
 
-console.log(output);
+// console.log(output);

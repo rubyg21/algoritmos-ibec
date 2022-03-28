@@ -31,6 +31,10 @@
 // console.log(compact)
 
 
+
+
+
+
 // PRACTICO 1 BUSQUEDA LINEAL ************OK************
 // 2 - b
 
@@ -53,6 +57,13 @@
 // }
 
 // console.log(w,z,x)
+
+
+
+
+
+
+
 
 // PRACTICO 1 BUSQUEDA LINEAL ************OK************
 // 2 - d

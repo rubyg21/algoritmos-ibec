@@ -4,33 +4,34 @@
 // 2. Desarrollar un algoritmo de ordenación compacta para los siguientes arrays
 // a. Input: [1,2,”B”,”C”,”B”] Output: w: [1,2], z: [”B”,”C”]
 
-const input = [1, 2, 'B', 'C', 'B']
+// const input = [1, 2, 'B', 'C', 'B']
 
-const w = []
-const z = []
+// const w = []
+// const z = []
 
-for (let i = 0; i < input.length; i++){
-    if(typeof input[i] === 'number'){
-        w.push(input[i])
-    } else if(typeof input[i] === 'string'){
-        z.push(input[i]) // z.push(null)
-    }
-}
-console.log(w)
-// console.log(z)
-let comp_z = []
-for (let i = 0; i < z.length; i++){
-    // let count = 0
-    // for (let j = 0; j < z.length; j++){
-    //     if(z[i] === z[j]){
-    //         count++
-    //     }
-    // }
-    if(!comp_z.includes(z[i])){
-        comp_z.push(z[i])
-    }
-}
-console.log(comp_z)
+// for (let i = 0; i < input.length; i++){
+//     if(typeof input[i] === 'number'){
+//         w.push(input[i])
+//     } else if(typeof input[i] === 'string'){
+//         z.push(input[i]) // z.push(null)
+//     }
+// }
+// console.log(w)
+// // console.log(z)
+// let comp_z = []
+// for (let i = 0; i < z.length; i++){
+//     // let count = 0
+//     // for (let j = 0; j < z.length; j++){
+//     //     if(z[i] === z[j]){
+//     //         count++
+//     //     }
+//     // }
+//     if(!comp_z.includes(z[i])){
+//         comp_z.push(z[i])
+//     }
+// }
+// console.log(comp_z)
+
 
 // ************************* OJO***********************
 
